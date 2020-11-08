@@ -1,0 +1,26 @@
+<h1>Experience</h1>
+<div class="clr-row">
+    <div class="clr-col-lg-12" *ngFor="let experience of data">
+        <div class="card">
+            <div class="card-block">
+                <div class="card-media-block">
+                    <img [src]=experience.companyLogo class="card-media-image">
+                    <div class="card-media-description">
+                        <span class="card-media-title">
+                            {{ experience.companyName }}
+                        </span>
+                        <span class="card-media-text">
+                            {{ experience.type }}
+                        </span>
+                    </div>
+                </div>
+                <div class="card-text">
+                    {{ experience.summary }}
+                </div>
+            </div>
+            <div class="card-footer">
+                <span class="label label-info" *ngFor="let tag of experience.tags">{{ tag }}</span>
+            </div>
+        </div>
+    </div>
+</div>

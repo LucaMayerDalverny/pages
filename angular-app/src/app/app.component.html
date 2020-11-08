@@ -1,1 +1,41 @@
-<p>Hello World</p>
+<clr-main-container>
+  <clr-header>
+    <div class="branding">
+      <a routerLink="" class="nav-link">
+        <span class="title">Luca Mayer-Dalverny</span>
+      </a>
+    </div>
+  </clr-header>
+  <div class="content-container">
+    <clr-vertical-nav [clr-nav-level]="1">
+      <clr-vertical-nav-group routerLinkActive="active" [clrVerticalNavGroupExpanded]="true">
+        <clr-icon shape="user" clrVerticalNavIcon></clr-icon>
+        CV
+        <clr-vertical-nav-group-children>
+          <a clrVerticalNavLink
+             routerLink="cv/education"
+             routerLinkActive="active">
+             Education
+          </a>
+          <a clrVerticalNavLink
+             routerLink="cv/experience"
+             routerLinkActive="active">
+             Experience
+          </a>
+          <a clrVerticalNavLink
+             routerLink="cv/skills"
+             routerLinkActive="active">
+             Skills
+          </a>
+        </clr-vertical-nav-group-children>
+      </clr-vertical-nav-group>
+      <a clrVerticalNavLink routerLink="contact" routerLinkActive="active">
+        <clr-icon shape="help-info"></clr-icon>
+        Contact
+      </a>
+    </clr-vertical-nav>
+    <div class="content-area">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</clr-main-container>
