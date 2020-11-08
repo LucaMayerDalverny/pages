@@ -1,6 +1,7 @@
 [
     {
         "type": "Internship",
+        "year": 2020,
         "companyName": "CEA Grenoble",
         "companyLogo": "assets/images/logo-cea.png",
         "summary": "Studying Generative Neural Networks to optimize a Knowledge Transfer Method",
@@ -8,7 +9,8 @@
     },
     {
         "type": "Internship",
-        "companyName": "Dassault Falcon Jet",
+        "year": 2019,
+        "companyName": "Dassault Falcon Jet, Little Rock",
         "companyLogo": "assets/images/logo-dfj.png",
         "summary": "Redesign of the MIS Self Service Portal with Angular and Clarity Design System",
         "tags": ["Web-Dev", "Angular", "Clarity", "TypeScript", "C#"]

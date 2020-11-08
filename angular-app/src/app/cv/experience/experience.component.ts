@@ -17,4 +17,8 @@ export class ExperienceComponent implements OnInit {
     this.experienceService.getData().subscribe(data => this.data = data);
   }
 
+  getData(): IExperience[]{
+    return this.data.sort((a, b) => b.year - a.year);
+  }
+
 }
