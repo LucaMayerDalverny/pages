@@ -1,3 +1,9 @@
 .center{
     text-align: center;
 }
+
+::ng-deep .header-hamburger-trigger > span, 
+::ng-deep .header-hamburger-trigger > span::before, 
+::ng-deep .header-hamburger-trigger > span::after {
+  background-color: #F4AC45;
+}
