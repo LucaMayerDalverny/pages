@@ -1,17 +1,33 @@
 <div class="clr-row">
-    <div class="clr-col-sm-12 clr-col-md-3">
-        <div class="card">
+    <div class="clr-col-sm-12 clr-col-lg-3">
+        <div class="card" *ngIf="mediumScreen()">
             <div class="card-img">
-                <img src="assets/images/cv-image.png" height="25%">
+                <img class="large" src="assets/images/cv-image.png">
             </div>
             <div class="card-block">
-                <p class="card-text">
-                    Lorem ipsum dolor sit amet.
-                </p>
+                <div class="card-title">
+                    Luca Mayer-Dalverny
+                </div>
+                <div class="card-text">
+                    Engineer in Artificial Intelligence and Bio-inspired Software Developement
+                </div>
+            </div>
+        </div>
+        <div class="card" *ngIf="!mediumScreen()">
+            <div class="card-img">
+                <img class="small" src="assets/images/cv-image.png">
+            </div>
+            <div class="card-block">
+                <div class="card-title center">
+                    Luca Mayer-Dalverny
+                </div>
+                <div class="card-text center">
+                    Engineer in Artificial Intelligence and Bio-inspired Software Developement
+                </div>
             </div>
         </div>
     </div>
-    <div class="clr-col-sm-12 clr-col-md-6">
+    <div class="clr-col-sm-12 clr-col-lg-6">
         <router-outlet></router-outlet>
     </div>
 </div>
